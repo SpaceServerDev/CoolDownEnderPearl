@@ -1,36 +1,5 @@
-# PM-PluginTemplate 
+# CoolDownEnderPearl
 
 ## 概要　
-テンプレートです。　
-
-
-## コマンド
-### example
-
-```bash
-/example [x] [y] [z]
-```
-
-## API
-
-インスタンスを取得
-```php
-$api = Example::getInstance();
-```
-
-お金を取得
-```php
-$api->getMoney($player);
-```
-
-
-## コンフィグ
-```yaml
-1:
-  ID: 1
-  Meta: 1
-```
-
-## その他
-
-
+依頼物です。
+エンダーパールを投げたら5秒間投げれなくなり、xpバーに進捗が報告されます。
