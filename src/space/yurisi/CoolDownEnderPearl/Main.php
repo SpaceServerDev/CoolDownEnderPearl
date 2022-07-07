@@ -20,7 +20,7 @@ class Main extends PluginBase {
 
     public function setTask(Player $player) {
         $this->progress[$player->getName()] = $player->getXpManager()->getXpProgress();
-        $task = $this->getScheduler()->scheduleRepeatingTask(new SendTask($player, $this), $this->getSecond());
+        $task = $this->getScheduler()->scheduleRepeatingTask(new SendTask($player, $this), 5);
         $this->tasks[$player->getName()] = $task->getTask()->getHandler();
     }
 
